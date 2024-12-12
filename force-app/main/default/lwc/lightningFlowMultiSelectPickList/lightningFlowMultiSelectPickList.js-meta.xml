@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <propertyType name="T" extends="SObject" label="Datatable Object API Name" description="Select the API Name of the SObject to use in the Datatable"/>
+            <property name="recordList" label="Records to be converted to multiSelect Picklist" type="{T[]}" role="inputOnly" description="Records to be converted to multiSelect Picklist"/>
+            <property name="labelFieldAPIName" type="String" label="Label field api name" description="Label field api name"></property>
+            <property name="valueFieldAPIName" type="String" label="Value field api name" description="Value field api name"></property>
+            <property name="mode" type="String" label="M or S" description="Mutiple or Single records to be selected"></property>
+            <property name="selectedValues" type="String" label="Selected values String as semicolon seperated" description="Selected values String as semicolon seperated"></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

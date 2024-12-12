@@ -1,0 +1,12 @@
+.custom-scrollable {
+    height: 635px;
+    overflow-y: auto;
+    border: 1px solid #d8dde6;
+    padding: 1rem;
+}
+.titleHeader{
+    font-size: 1rem;
+}
+.titlelink{
+    color:blue;
+}

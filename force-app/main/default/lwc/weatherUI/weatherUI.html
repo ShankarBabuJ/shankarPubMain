@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Weather report" icon-name="custom:custom5">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-input name="latitude" type="number" step="0.0001" label="Latitude" required="true"
+                    onchange={handleChangeValue}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <lightning-input name="longitude" type="number" step="0.0001" label="Longitude" required="true"
+                    onchange={handleChangeValue}>
+                </lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-button variant="brand" label="Submit" title="Primary action"
+                    onclick={handleSubmit}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+        <b style="color:rgb(26, 6, 97)">
+            Location: {weatherRecord.name}  <br/>
+            Temperature: {weatherRecord.currentTemp}  <br/>
+            Max Temperature: {weatherRecord.maxTemp}  <br/>
+            Min Temperature: {weatherRecord.minTemp} <br/>
+            Sun Rise: {weatherRecord.sunrise} <br/>
+            Sun Set: {weatherRecord.sunset}
+        </b>
+    </lightning-card>
+</template>

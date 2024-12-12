@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Getter Setter Mechanism" icon-name="utility:bucket">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+
+                <!-- <div class="padding-around:small">
+                    <lightning-input label="Message" value={message} onchange={handleMessage}></lightning-input>
+                </div> -->
+                <lightning-radio-group name="colorGroup" label="Color" options={colorOptions} value={selectedColor}
+                    type="radio" onchange={handleColorChange}></lightning-radio-group>
+
+
+                <div class={currentClass}>
+                    <lightning-formatted-text value={displayColor}></lightning-formatted-text>
+                </div>
+
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

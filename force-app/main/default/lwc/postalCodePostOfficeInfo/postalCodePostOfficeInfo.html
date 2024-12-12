@@ -1,0 +1,34 @@
+<template>
+    <lightning-card>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-input type="text" name="postalCode" label="Enter a Postal Code"
+                    onchange={handleValuesChanged}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <lightning-input type="text" name="postalArea" label="Enter a Postal Area"
+                    onchange={handleValuesChanged}></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+        <div class="slds-clearfix slds-p-left_medium slds-p-bottom_small">
+            <lightning-button class="slds-float_left" onclick={handlePostalCodeDetails} label="Submit">
+            </lightning-button>
+        </div>
+        <template lwc:if={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+        <template lwc:else>
+            <lightning-datatable key-field="Name" data={postOfficeData} show-row-number-column
+                row-number-offset={rowOffset} hide-checkbox-column columns={columns}>
+            </lightning-datatable>
+        </template>
+        <!-- <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <button onclick={handlePrevious}> Previous</button>
+            </lightning-layout-item>  
+            <lightning-layout-item padding="around-small">
+                <button onclick={handlePrevious}> Next</button>
+            </lightning-layout-item> 
+        </lightning-layout>    -->
+    </lightning-card>
+</template>

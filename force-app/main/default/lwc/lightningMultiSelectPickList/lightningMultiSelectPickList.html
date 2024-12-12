@@ -1,0 +1,68 @@
+<template>
+    <div class="slds-form-element selectbox">
+
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container slds-size_small" style="width: 400px; position: sticky;">
+                <template if:true={isSingleMode}>
+                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+                    aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                    <!-- Drop down section : Start -->
+                    <template if:true={showdropdown}>
+                        <div id="listbox-id-5" style="height: 150px;" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+                            role="listbox">
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <template if:true={serialsListLoading}>
+                                    <lightning-spinner alternative-text="Loading" variant="brand" size="small">
+                                    </lightning-spinner>
+                                </template>
+                                <template if:false={serialsListLoading}>
+                                    <div class="slds-float_left" style="width: 100px;">
+                                        <template for:each={values} for:item="eachvalue">
+                                            <div key={eachvalue.label}>
+                                                <c-lightning-pick-list-value key={eachvalue.label} label={eachvalue.label}
+                                                value={eachvalue.value} selected={eachvalue.selected} mode={mode} values={values} 
+                                                onfetchedvalue={handleSelectedOption}>
+                                            </c-lightning-pick-list-value>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div> 
+
+                </template>
+                <template if:false={isSingleMode}>
+                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+                    aria-expanded="true" aria-haspopup="listbox" role="combobox" onclick={handleClick}  >
+
+                    <!-- Drop down section : Start -->
+                    <template if:true={showdropdown}>
+                        <div id="listbox-id-6" style="height: 150px;" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+                            role="listbox">
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <template if:true={serialsListLoading}>
+                                    <lightning-spinner alternative-text="Loading" variant="brand" size="small">
+                                    </lightning-spinner>
+                                </template>
+                                <template if:false={serialsListLoading}>
+                                    <div class="slds-float_left" style="width: 100px;">
+                                        <template for:each={values} for:item="eachvalue">
+                                            <div key={eachvalue.label}>
+                                                <c-lightning-pick-list-value key={eachvalue.label} label={eachvalue.label}
+                                                value={eachvalue.value} selected={eachvalue.selected} mode={mode} values={values}>
+                                            </c-lightning-pick-list-value>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div> 
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

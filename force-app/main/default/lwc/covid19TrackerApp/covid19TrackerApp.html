@@ -1,0 +1,25 @@
+<template>
+    <lightning-card>
+        <div class="slds-align_absolute-center slds-text-heading_large" style="color: red;">
+            Indian Covid 19 Report
+        </div>
+        <div style="color:darkviolet">
+            <strong>Cases: {unofficial_summary.active}</strong> </br>
+            <strong>Total Deaths: {unofficial_summary.deaths}</strong></br>
+            <strong>Total Recovered: {unofficial_summary.recovered}</strong></br>
+            <strong>Source: {unofficial_summary.source}</strong></br>
+            <strong>Total cases: {unofficial_summary.total}</strong></br>
+        </div>        
+        <div style="height: 450px; width:auto">
+            <!-- <lightning-datatable
+            min-column-width="150"
+                    key-field="Id"
+                    data={data} hide-checkbox-column="true"
+                    columns={columns}>
+            </lightning-datatable> -->
+            <c-covid-19-tracker-cust-table key-field="Id" data={data} columns={columns} 
+            hide-checkbox-column="true" show-row-number-column>
+            </c-covid-19-tracker-cust-table>
+        </div>
+    </lightning-card>
+</template>

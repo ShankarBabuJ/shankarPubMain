@@ -1,0 +1,51 @@
+<template>
+    <template if:true={isVisible}>  
+        <lightning-card>
+            <center> 
+                <div class="title" style="height: 6%;"><img src={imageUrl} alt="YouTube"/></div>
+            </center>
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-6"></div>
+                <div class="slds-col slds-size_3-of-6 slds-p-left_medium slds-p-top_xx-small">
+                    <lightning-input type="text" label="Search" value={searchKey} onchange={handleKeyChange} variant="label-hidden"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-6 slds-p-left_medium slds-p-top_xx-small">
+                    <lightning-button variant="brand" label="Search Video On YouTube" title="Search Video On YouTube" onclick={fetchYouTubeVideos}></lightning-button>
+                </div>
+                <div class="slds-col slds-size_1-of-6  slds-p-left_medium"></div>
+            </div>
+        </lightning-card>   
+        <lightning-card title={uiRecordData.title}>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_2-of-3">
+                    <div class="slds-p-left_medium">
+                        <strong><p>{uiRecordData.description}</p></strong>
+                    </div>                   
+                    <article>
+                        <div class="slds-box slds-theme_default"> <iframe src={uiRecordData.viewURL} width="100%" height="600px" frameborder="0" allowfullscreen></iframe> </div>
+                    </article>     
+                </div>
+                <div class="slds-col slds-size_1-of-3 slds-p-left_medium slds-p-top_medium">
+                    <div class="custom-scrollable">
+                        <template for:each={items} for:item="it">
+                            <div key={it.etag} class="mypad">
+                                <div class="titleHeader">
+                                    <strong>
+                                        Title: <a class='slds-card__header-link titlelink' data-id={it.etag} onclick={watchVideo}>{it.snippet.title}</a></br> 
+                                    </strong></br>
+                                </div>
+                                <img src={it.snippet.thumbnails.default.url} alt="Images" width="200" height="200"></br>                              
+                                <p><strong>Channel Title :</strong> {it.snippet.channelTitle}</p>
+                                <p><strong>Description :</strong> {it.snippet.description}</p></br>
+                                <strong>-----------------------------------------------------------------------</strong>                              
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+    </template>  
+    <template if:false={isVisible}> 
+        <lightning-card>No contant at this moment</lightning-card>
+    </template>
+</template>

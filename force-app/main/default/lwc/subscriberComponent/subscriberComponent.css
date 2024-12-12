@@ -1,0 +1,21 @@
+:host {
+    --blue: blue;
+    --red: red;
+    --green: green;
+    --bgcolor: yellow;
+}
+.RedClass{
+    color: var(--red);
+    background-color: var(--bgcolor);
+    font-size: large;
+}
+.BlueClass{
+    color: var(--blue);
+    background-color: var(--bgcolor);
+    font-size: large;
+}
+.GreenClass{
+    color: var(--green);
+    background-color: var(--bgcolor);
+    font-size: large;
+}

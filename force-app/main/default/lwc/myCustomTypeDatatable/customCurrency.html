@@ -1,0 +1,8 @@
+<!--customNumber.html-->
+<template>
+    <div class="slds-p-around_x-small">
+        <lightning-icon icon-name={typeAttributes.currency} alternative-text="currency"></lightning-icon>
+        <lightning-icon icon-name={typeAttributes.profit} alternative-text="profit"></lightning-icon>
+        <lightning-formatted-number value={value} class="slds-float_right" format-style="decimal" maximum-fraction-digits="2" step="0.01"></lightning-formatted-number>        
+    </div>
+</template>
