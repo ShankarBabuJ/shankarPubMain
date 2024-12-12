@@ -6,7 +6,6 @@ public with sharing class AccountController {
         }catch(Exception ex){
             System.debug('Error '+ ex.getMessage());
         }
-       
         Update_Case_On_Account_Update__e uconac = new Update_Case_On_Account_Update__e(Account_Id__c = acc.id);
         Database.SaveResult saveResult = EventBus.publish(uconac);
         if(saveResult.isSuccess()){
