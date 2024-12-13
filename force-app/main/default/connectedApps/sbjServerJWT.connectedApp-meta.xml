@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>1998shankarbabu@gmail.com</contactEmail>
+    <description>To do JWT integeration</description>
+    <infoUrl>https://login.salesforce.com/logos/Salesforce/SalesCloud/icon.png</infoUrl>
+    <label>sbjServerJWT</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/SalesCloud/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://www.salesforce.com/in/</callbackUrl>
+        <certificate>MIIEgTCCA2mgAwIBAgIOAY6ucTZLAAAAABhBrn4wDQYJKoZIhvcNAQELBQAwgYIxGjAYBgNVBAMMEXNlcnZlckNlcnRpZmljYXRlMRgwFgYDVQQLDA8wMEQ1aDAwMDAwOGpuNVcxFzAVBgNVBAoMDlNhbGVzZm9yY2UuY29tMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQswCQYDVQQIDAJDQTEMMAoGA1UEBhMDVVNBMB4XDTI0MDQwNTEzMjcxOFoXDTI1MDQwNTEyMDAwMFowgYIxGjAYBgNVBAMMEXNlcnZlckNlcnRpZmljYXRlMRgwFgYDVQQLDA8wMEQ1aDAwMDAwOGpuNVcxFzAVBgNVBAoMDlNhbGVzZm9yY2UuY29tMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQswCQYDVQQIDAJDQTEMMAoGA1UEBhMDVVNBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3Dr+oX+Cm/AcGfh2Ubv3rMDX/fzT2qXijZq97Hqr526jFgVkCOSn++GWmrrBa6KHeH2A4oM+PZOE4jj/WiwCIUY+RndKbMmkwOYQEL/co0c0mKqPnm3e9aBQgh4GY39M/fd7Hh4etkJjMy9tavwEaYDwLOEvfSdlKlde7nsf/gLzuHYq9Ibfnr3oW82pfLqdgJLT74CPuSmmDoqalcih4XrnOsVcoqIjECMZT8Xmn5XJEeU2DyKoWxSHwPi9P38N65RPoJcmGbcYjBdb4RHnw/08LkhFUAanwUdL/1O+lO3ZPOIuZe6A7KUCEzs5fjRtviGnVr+T7w2LPdugKhx87wIDAQABo4HyMIHvMB0GA1UdDgQWBBRu2eGjACXpxy6iDeBx0xzjYJbnKDAPBgNVHRMBAf8EBTADAQH/MIG8BgNVHSMEgbQwgbGAFG7Z4aMAJenHLqIN4HHTHONglucooYGIpIGFMIGCMRowGAYDVQQDDBFzZXJ2ZXJDZXJ0aWZpY2F0ZTEYMBYGA1UECwwPMDBENWgwMDAwMDhqbjVXMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQYIOAY6ucTZLAAAAABhBrn4wDQYJKoZIhvcNAQELBQADggEBANZzBKK4O15JV/GHiDidKWW75fCN8El7O+p2H/8PmjQ5Kz5ue2UaJCigbg6CQyaAVQM9rr9QxjKENkrzMDwUND5hV08BgZIhfWQOB9hTkeyqK064LjybAPoWF/2YFg7qjb+TPglna8e/oEpPldNpfh/yjqQApc8ysjTDwfTuovEryTkyte7IOdI6ZGB8xQKSNO6I+5DKsMR9bRaVior3njxPSnKtG2fc96d3P/kfj69JN/3v3cgl1MHJKXaGndbZVAyjO/G5/tOvCbiurlgTO/DnBe/cGnXo3fxTe18YuYS69q8WWEIa8nHP/LP2ZfD9qjUSbgb8ekCqai6b3GWzzww=</certificate>
+        <consumerKey>3MVG95mg0lk4batjFesyuXRSxBtXvwOQgbERi.FMDSPQOUG4KT2HFnrB0_fwotLVhJcU93CwQBd5lqNplG6tT</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>true</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+        <scopes>Eclair</scopes>
+        <scopes>Pardot</scopes>
+        <scopes>Lightning</scopes>
+        <scopes>Content</scopes>
+        <scopes>CDPIngest</scopes>
+        <scopes>CDPProfile</scopes>
+        <scopes>CDPQuery</scopes>
+        <scopes>Chatbot</scopes>
+        <scopes>CDPSegment</scopes>
+        <scopes>CDPIdentityResolution</scopes>
+        <scopes>CDPCalculatedInsight</scopes>
+        <scopes>ForgotPassword</scopes>
+        <scopes>UserRegistration</scopes>
+        <scopes>SFAP</scopes>
+        <scopes>Interaction</scopes>
+        <scopes>CDP</scopes>
+        <scopes>EinsteinGPT</scopes>
+        <scopes>PwdlessLogin</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+    <profileName>Standard User</profileName>
+    <profileName>Standard Platform User</profileName>
+</ConnectedApp>
