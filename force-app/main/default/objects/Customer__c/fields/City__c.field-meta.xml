@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City__c</fullName>
+    <description>Customer&apos;s City</description>
+    <inlineHelpText>Customer&apos;s City</inlineHelpText>
+    <label>City</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>State__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Araku</fullName>
+                <default>true</default>
+                <label>Araku</label>
+            </value>
+            <value>
+                <fullName>Thirupathi</fullName>
+                <default>false</default>
+                <label>Thirupathi</label>
+            </value>
+            <value>
+                <fullName>Vijayawada</fullName>
+                <default>false</default>
+                <label>Vijayawada</label>
+            </value>
+            <value>
+                <fullName>Chennai</fullName>
+                <default>false</default>
+                <label>Chennai</label>
+            </value>
+            <value>
+                <fullName>Vellore</fullName>
+                <default>false</default>
+                <label>Vellore</label>
+            </value>
+            <value>
+                <fullName>Selam</fullName>
+                <default>false</default>
+                <label>Selam</label>
+            </value>
+            <value>
+                <fullName>Bangalore</fullName>
+                <default>false</default>
+                <label>Bangalore</label>
+            </value>
+            <value>
+                <fullName>Mysore</fullName>
+                <default>false</default>
+                <label>Mysore</label>
+            </value>
+            <value>
+                <fullName>Kochi</fullName>
+                <default>false</default>
+                <label>Kochi</label>
+            </value>
+            <value>
+                <fullName>Thiruvalla</fullName>
+                <default>false</default>
+                <label>Thiruvalla</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Andhra Prasdesh</controllingFieldValue>
+            <valueName>Araku</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andhra Prasdesh</controllingFieldValue>
+            <valueName>Thirupathi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andhra Prasdesh</controllingFieldValue>
+            <valueName>Vijayawada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Karnataka</controllingFieldValue>
+            <valueName>Bangalore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Karnataka</controllingFieldValue>
+            <valueName>Mysore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kerala</controllingFieldValue>
+            <valueName>Kochi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kerala</controllingFieldValue>
+            <valueName>Thiruvalla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tamil Nadu</controllingFieldValue>
+            <valueName>Chennai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tamil Nadu</controllingFieldValue>
+            <valueName>Vellore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tamil Nadu</controllingFieldValue>
+            <valueName>Selam</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

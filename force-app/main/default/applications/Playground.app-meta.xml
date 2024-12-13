@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>X1600wqJptouniZ0A</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Playground</label>
+    <navType>Standard</navType>
+    <tabs>standard-MobileHome</tabs>
+    <tabs>Playground_APP_Page</tabs>
+    <tabs>Postal_code_post_office_details_app_page</tabs>
+    <tabs>Covid19_Info_Page</tabs>
+    <tabs>YouTube_Search_Engine</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Playground_UtilityBar</utilityBar>
+</CustomApplication>

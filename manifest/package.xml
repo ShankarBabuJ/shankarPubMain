@@ -36,5 +36,41 @@
         <members>*</members>
         <name>LightningMessageChannel</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>Flexipage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ConnectedApp</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ConnectedApp</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
     <version>62.0</version>
 </Package>
