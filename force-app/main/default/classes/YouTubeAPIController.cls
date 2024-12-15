@@ -6,7 +6,7 @@ public with sharing class YouTubeAPIController {
         Map<String,Object> results;
         HttpRequest request = new HttpRequest();
         searchKey = (searchKey == '' ? 'Salesforce' : searchKey);
-        String endPoint = searchURL+'?part=snippet&maxResults=90&type=video&q='+EncodingUtil.urlEncode(searchKey, 'UTF-8')+'&key='+YoutubeAPIKey__c.getInstance('YoutubeKey').Key__c;
+        String endPoint = searchURL+'?part=snippet&maxResults=90&type=video&q='+EncodingUtil.urlEncode(searchKey, 'UTF-8')+'&key='+(Test.isRunningTest() ?'TestKey':YoutubeAPIKey__c.getInstance('YoutubeKey').Key__c);
         request.setEndpoint(endPoint);
         request.setMethod('GET');
         request.setHeader('Content-Type', 'application/json');
