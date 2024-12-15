@@ -1,6 +1,6 @@
 @RestResource(urlmapping='/LeadRestServer/*')
 global class LeadRestService {
-    @httpget
+    /*@httpget
     global static list<lead> getleadInformation(){
         RestRequest req = RestContext.request;
         RestResponse res = RestContext.response;
@@ -75,5 +75,5 @@ global class LeadRestService {
            respMessage ='Exception occured during lead update '+ex.getMessage();
         }
         return respMessage;
-    }
+    }*/
 }

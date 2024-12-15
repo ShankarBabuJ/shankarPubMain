@@ -1,12 +1,14 @@
 @isTest
 private class UserSendEmailVerifyNoticeHandlerTest {
-
     @isTest
     public static void testBulkUserSendEmailVerifyNoticeHandler() {
-        List<User> testUserList = [SELECT Id, Email, Username FROM User WHERE Username IN ('1998shankarbabu@gmail.com')];
         Test.startTest();
-        update testUserList;
+        Profile p = [SELECT Id FROM Profile WHERE Name='Standard User' LIMIT 1];
+        User newUser = new User( FirstName = 'John', LastName = 'Doe', Email = 'john.doe@example.com', Username = 'johndoe@example.com.test5867676767', Alias = 'jdoe', TimeZoneSidKey = 'America/Los_Angeles', LocaleSidKey = 'en_US', EmailEncodingKey = 'UTF-8', LanguageLocaleKey = 'en_US', ProfileId = p.Id ); 
+        insert newUser;
+        UserSendEmailVerifyNoticeHandler.sendEmailVerifyNotfication(new List<User> { newUser });
+        System.debug('newUser.id'+newUser.id);
         Test.stopTest();
-        System.assert(testUserList[0].id != null);
+        System.assert(newUser.id != null);
     }
 }
