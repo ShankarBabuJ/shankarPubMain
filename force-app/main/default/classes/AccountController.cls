@@ -1,5 +1,5 @@
 public with sharing class AccountController {
-    public Account handleAccountUpdate(Id accountId) {
+    public static Account handleAccountUpdate(Id accountId) {
         Account acc = new Account(Id = accountId, CustomerPriority__c = 'High');
         try{
             Update acc;
