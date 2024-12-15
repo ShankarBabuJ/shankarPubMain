@@ -26,6 +26,7 @@ public with sharing class RefactorTestClass {
         insert caseNew2;
         caseNew.Subject = 'HELPP2';
         List<Case> updateCase = new List<Case>{caseNew2,caseNew};
+        System.debug('updateCase'+updateCase);
         update updateCase;
         Test.stopTest();
     }

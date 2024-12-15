@@ -5,6 +5,7 @@ public with sharing class AccountControllerTest {
         Account accountNew = new Account();
         accountNew.Name = 'Test Account';
         accountNew.Type = 'VIP';
+        accountNew.CustomerPriority__c = 'High';
         insert accountNew;
         Case caseNew = new Case();
         caseNew.Status = 'Working';
