@@ -12,7 +12,7 @@ public with sharing class YouTubeAPIController {
         request.setHeader('Content-Type', 'application/json');
         request.setHeader('Accept', 'application/json');
         HttpResponse response = http.send(request);
-        system.debug('response '+response.getBody());
+        System.debug('response '+response.getBody());
         System.debug('response status '+response.getStatusCode());
         results = (Map<String,Object>) JSON.deserializeUntyped(response.getBody());
         return results;
