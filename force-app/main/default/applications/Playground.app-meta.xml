@@ -19,6 +19,7 @@
     <tabs>Postal_code_post_office_details_app_page</tabs>
     <tabs>Covid19_Info_Page</tabs>
     <tabs>YouTube_Search_Engine</tabs>
+    <tabs>Zero_to_Hero_LWC_Work_Space</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Playground_UtilityBar</utilityBar>
 </CustomApplication>

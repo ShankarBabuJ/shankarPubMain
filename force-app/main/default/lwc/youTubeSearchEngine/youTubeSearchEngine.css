@@ -10,3 +10,14 @@
 .titlelink{
     color:blue;
 }
+.description{
+    color: brown;   
+    font-size: larger;
+    font-weight: bold;
+}
+.title{
+    color: blue;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 15px;    
+}
