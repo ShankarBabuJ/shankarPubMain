@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Dev_Record_has_been_updated_Successfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Dev_Record has been updated Successfully</shortDescription>
+        <value>Record has been updated Successfully</value>
+    </labels>
+</CustomLabels>
