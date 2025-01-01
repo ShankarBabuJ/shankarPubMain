@@ -69,8 +69,20 @@
         <name>ValidationRule</name>
     </types>
     <types>
-    <members>*</members>
-    <name>Layout</name>
-</types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+    <types> 
+        <members>*</members>
+        <name>ReportType</name> 
+    </types>
+	 <types> 
+        <members>unfiled$public/Account_case_summary_report_XqP</members>
+        <members>unfiled$public/Account_with_Opportunity_and_Quotes_y7C</members>
+        <members>unfiled$public/New_Contacts_Accounts_Report_YUJ</members>
+        <members>unfiled$public/New_Leads_Report_YUt</members>
+        <members>unfiled$public/New_Opportunities_Report_by_staging_kEf</members>
+        <name>Report</name> 
+    </types>
     <version>62.0</version>
 </Package>
